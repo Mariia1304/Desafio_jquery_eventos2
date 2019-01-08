@@ -1,0 +1,22 @@
+body {
+    background-color: #eee;
+}
+button {
+    background-color: green;
+    display: block;
+    float: right;
+    margin-right: 50px;
+    border-radius: 13px;
+    margin-top: 5px;
+}
+input {
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    border-radius: 12px;
+}
+.tweet {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
