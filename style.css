@@ -1,15 +1,18 @@
 body {
     background-color: #edf2f7;
 }
-button {
+.button_pub {
+    margin-left: 20px;
+    margin-bottom: 10px;
     background-color: #4AB59F;
-    float: right;
-    margin-right: 20px;
     border-radius: 15px;
     color: white;
     font-size: 9px;
     padding: 6px 5px;
-    border-color: transparent;
+}
+.button_cruz {
+    background-color: transparent;
+    border: none;
 }
 input {
     margin-top: 10px;
@@ -18,17 +21,41 @@ input {
     border: 2px solid #737378;
     border-radius: 15px;
 }
-.tweet__me, .tweet {
+.img_me {
     margin-top: 10px;
-    height: 26vh;
-    background-color: #fff;
-}
-.img_me, .img_other {
+    margin-left: 15px;
     margin-bottom: 30px;
-    width: 5%;
+    width: 30px;
     border-radius: 50%;
 }
 .img_other {
+    border-radius: 50%;
+    width: 35px;
     margin-left: 10px;
     margin-top: 10px;
+}
+.foto {
+    width: 80%;
+}
+.tweet {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fa-heart {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.text {
+    float: left;
+}
+#counter {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.liked {
+    color: red;
 }
