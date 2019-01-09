@@ -1,9 +1,14 @@
 $(function() {
     $("#submit").on("click", function() {
-        console.log($("#myTweet").val());
-        $("#myTweet").focus();
+        var textTweet = $("#myTweet").val();
+        $("#myTweet").val('');
+        //$("#myTweet").focus();
+        var new_tweet = $(".demo_tweet").clone();
+        new_tweet.removeClass("demo_tweet");
+        new_tweet.find("p:eq(0)").html(textTweet);
+        $(".right_column").prepend(new_tweet);
     });
-    $(".likeable").on("click", function() {
+    $("body").on("click", ".likeable", function() {
         $(this).addClass("liked");
         counter = $(this).next().text();
         counter = parseInt(counter);
@@ -11,7 +16,7 @@ $(function() {
         counter = $(this).next().text(counter + 1);
         $(this).next().val(counter).toString();
     });
-    $(".button_cruz").on("click", function() {
-        console.log($(this).parent().parent().remove());
+    $("body").on("click", ".button_cruz", function() {
+        console.log($(this).closest(".row").fadeOut());
     });
 });
