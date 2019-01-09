@@ -13,6 +13,8 @@
         </script>
         <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
         </script>
+        <script src="script.js">
+        </script>
     </head>
     <body>
         <div class="row">
@@ -50,10 +52,8 @@
                             </p>
                             <img alt="" class="foto" src="img/foto1.jpg"/>
                             <div class="row">
-                                <a href="">
-                                    <i class="far fa-heart likeable" style="">
-                                    </i>
-                                </a>
+                                <i class="far fa-heart likeable" style="">
+                                </i>
                                 <span id="counter">
                                     0
                                 </span>
@@ -152,31 +152,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            $(function(){
-                $("#submit").on("click", function(){
-                     console.log($("#myTweet").val());
-                     $("#myTweet").focus();
-                });
-
-                $(".likeable").on("click", function(){
-
-                      $(this).addClass("liked");
-
-                   
-                      counter = $(this).next().text();
-                      counter = parseInt(counter);
-                      console.log(counter + 1);
-                      counter = $(this).next().text(counter + 1);
-                      $(this).next().val(counter).toString();
-
-                });
-
-                $(".button_cruz").on("click", function(){
-                     console.log($(this).parent().parent().remove());
-                });
-            });
-        </script>
     </body>
 </html>
 <div>
