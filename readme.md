@@ -1,4 +1,4 @@
-
+[link a desafio](https://mariia1304.github.io/Desafio_jquery_eventos2/)
 # Actividad 2 de la Segunda Semana de JQuery
 
 Para la siguiente actividad clona este repositorio y trabaja en cada una de las carpetas respectivas.
